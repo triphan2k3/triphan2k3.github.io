@@ -9,10 +9,10 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
+                    Powered by <a href="http://hynduf.github.io">HynDuf Blog</a> |
                     <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
                         height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true">
+                        src="https://ghbtns.com/github-btn.html?user=hynduf&repo=hynduf.github.io&type=star&count=true">
                     </iframe>
                 </p>
             </div>
@@ -92,13 +92,13 @@
 {% endif %}
 
 
-{% if page.title == 'Archive' %}
+{% if page.title == 'ARCHIVE' %}
 <!-- jquery.tagcloud.js -->
 <script>
     async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
-            color: { start: '#bbbbee', end: '#2f93b4' },
+            color: { start: '#85c1dc', end: '#7287fd' },
         };
         $('#tag_cloud a').tagcloud();
     })
@@ -221,7 +221,7 @@
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
-    var $zh = document.querySelector(".zh");
+    var $vn = document.querySelector(".vn");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
@@ -239,16 +239,15 @@
         var lang = getLang()
         // en
         if (lang == "en") {
-            $select.selectedIndex = 1;
+            $select.selectedIndex = 0;
             $en.style.display = "block";
             $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-            // default to zh-cn
+            $vn.style.display = "none";
+            $vn.classList.remove("active");
         } else {
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
+            $select.selectedIndex = 1;
+            $vn.style.display = "block";
+            $vn.classList.add("active");
             $en.style.display = "none";
             $en.classList.remove("active");
         }
@@ -258,8 +257,8 @@
 
     // handle select change
     function onLanChange(index) {
-        if (index == 0) {
-            lang = "zh"
+        if (index == 1) {
+            lang = "vn"
         } else {
             lang = "en"
         }

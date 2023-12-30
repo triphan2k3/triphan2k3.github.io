@@ -1,39 +1,47 @@
+/*!
+ * Hux Blog v1.8.2 (http://huxpro.github.io)
+ * Copyright 2023 Hux <huxpro@gmail.com>
+ */
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
-    padding-right: 5%;
+    padding-right: 3%;
+  }
+  .sidebar-container {
+    padding-left: 3%;
   }
 }
 @media (min-width: 768px) {
   .post-container {
-    padding-right: 5%;
+    padding-right: 3%;
   }
 }
 .sidebar-container {
-  color: #bfbfbf;
+  color: #6c6f85;
   font-size: 14px;
 }
 .sidebar-container h5 {
-  color: #a3a3a3;
+  color: #4c4f69;
   padding-bottom: 1em;
 }
 .sidebar-container h5 a {
-  color: #a3a3a3 !important;
+  color: #4c4f69 !important;
   text-decoration: none;
 }
 .sidebar-container a {
-  color: #bfbfbf !important;
+  color: #6c6f85 !important;
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
-  color: #0085a1 !important;
+  color: #dc8a78 !important;
 }
 .sidebar-container .tags a {
-  border-color: #bfbfbf;
+  border-color: #6c6f85;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
-  border-color: #0085a1;
+  border-color: #dc8a78;
 }
 .sidebar-container .short-about img {
   width: 80%;
@@ -42,6 +50,7 @@
   margin-bottom: 20px;
 }
 .sidebar-container .short-about p {
+  color: #6c6f85;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -56,11 +65,11 @@
   overflow: auto;
   height: 100%;
   padding-bottom: 40px;
-  width: 195px;
+  width: 235px;
 }
 .side-catalog.fixed {
   position: fixed;
-  top: -21px;
+  top: 40px;
 }
 .side-catalog.fold .catalog-toggle::before {
   content: "+";
@@ -89,7 +98,7 @@
 }
 .side-catalog .catalog-body li a {
   padding-left: 10px;
-  max-width: 180px;
+  max-width: 220px;
   display: inline-block;
   vertical-align: middle;
   height: 30px;
@@ -99,26 +108,30 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.side-catalog .catalog-body .h1_nav,
+.side-catalog .catalog-body .h1_nav {
+  margin-left: 0px;
+  font-size: 13px;
+  font-weight: bold;
+}
 .side-catalog .catalog-body .h2_nav {
-  margin-left: 0;
+  margin-left: 8px;
   font-size: 13px;
   font-weight: bold;
 }
 .side-catalog .catalog-body .h3_nav {
-  margin-left: 6px;
+  margin-left: 16px;
   font-size: 13px;
   font-weight: bold;
 }
 .side-catalog .catalog-body .h4_nav {
-  margin-left: 12px;
+  margin-left: 24px;
   font-size: 12px;
 }
 .side-catalog .catalog-body .h4_nav a {
   max-width: 170px;
 }
 .side-catalog .catalog-body .h5_nav .h6_nav {
-  margin-left: 18px;
+  margin-left: 30px;
   font-size: 12px;
 }
 .side-catalog .catalog-body .h5_nav .h6_nav a {
@@ -129,7 +142,7 @@
   background-color: #f5f5f5;
 }
 .side-catalog .catalog-body .active a {
-  color: #0085a1 !important;
+  color: #1e66f5 !important;
 }
 @media (max-width: 1200px) {
   .side-catalog {
@@ -145,14 +158,15 @@
   transition-timing-function: ease;
   /*font-family: RobotoDraft;*/
   font-size: 14px;
+  font-weight: 600;
   min-height: 14px;
   background-color: #323232;
-  background-color: #0085a1;
+  background-color: #eebebe;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #4c4f69;
   line-height: 22px;
   padding: 18px 24px;
   bottom: 0px;
@@ -186,7 +200,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%
+    Default background fill: #323232 100%  
   */
     left: 0px;
     right: 0px;
@@ -197,8 +211,9 @@
   display: inline-block;
   border: none;
   font-size: inherit;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #ffeb3b;
+  color: #4c4f69;
   margin: 0px 0px 0px 24px;
   padding: 0px;
   min-width: min-content;
@@ -214,10 +229,10 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
-  outline-color: #a3a3a3;
+  outline-color: #9ca0b0;
 }
 .paper-button:hover {
   cursor: pointer;
@@ -231,7 +246,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -264,13 +279,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .paper-button input[type="submit"] {
-  outline-color: #a3a3a3;
+  outline-color: #9ca0b0;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -622,7 +637,7 @@ pre.highlight {
   width: 100%;
   font-size: 30px;
   font-weight: bold;
-  color: #404040;
+  color: #4c4f69;
 }
 @media only screen and (min-width: 768px) {
   .search-page #search-input {
@@ -651,22 +666,177 @@ pre.highlight {
 .search-icon-close {
   font-size: 16px;
 }
+.animated-text {
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.animated-text i {
+  font-style: italic;
+  font-size: 19px;
+  color: #333;
+  margin: 5px;
+  padding: 0;
+  opacity: 0;
+  animation: slide-in 3s ease-out forwards;
+}
+.animated-text img {
+  max-width: 700px;
+  /* Adjust the maximum width as needed */
+  height: auto;
+  /* Maintain the aspect ratio */
+}
+.animated-text p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: slide-in 2s ease-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-1%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.post-date span {
+  margin: 0px 5px 5px 2px;
+}
+.post-date {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.intro-header.style-text .post-heading .tags {
+  margin-top: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+}
+.intro-header.style-text .post-heading .tags a,
+.intro-header.style-text .post-heading .tags .tag {
+  font-family: "IBM Plex Mono", monospace;
+  border: 0;
+  border-radius: 0;
+  padding: 3px 10px 3px 10px;
+  color: #dc8a78;
+  background-color: rgba(220, 138, 120, 0.2);
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.intro-header.style-text .post-heading .tags a:hover,
+.intro-header.style-text .post-heading .tags .tag:hover,
+.intro-header.style-text .post-heading .tags a:active,
+.intro-header.style-text .post-heading .tags .tag:active {
+  color: #e64553;
+  background-color: rgba(230, 69, 83, 0.15);
+}
+.post-preview .tags {
+  margin-top: 10px;
+}
+.post-preview .tags a,
+.post-preview .tags .tag {
+  font-family: "IBM Plex Mono", monospace;
+  border: 0;
+  border-radius: 0;
+  padding: 3px 10px 3px 10px;
+  color: #dc8a78;
+  background-color: rgba(220, 138, 120, 0.2);
+  margin: 0 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.post-preview .tags a:hover,
+.post-preview .tags .tag:hover,
+.post-preview .tags a:active,
+.post-preview .tags .tag:active {
+  color: #e64553;
+  background-color: rgba(230, 69, 83, 0.15);
+}
+.fa-circle {
+  color: #8c8fa1;
+}
+.sidebar-container h5 {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.sidebar-container p {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+}
+.sidebar-container .tags a {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "IBM Plex Mono", monospace;
+}
+.post-container {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.625;
+  font-family: "Inter", sans-serif;
+}
+.navbar-custom.invert .nav li a {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "IBM Plex Mono", monospace;
+}
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "IBM Plex Mono", monospace;
+}
+.sidebar-container ul li a {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "IBM Plex Mono", monospace;
+}
+a,
+a:focus {
+  outline: none;
+}
+.post-container .pager li > a {
+  background-color: #eff1f5;
+}
+.header-line {
+  text-align: center;
+  font-size: 30px;
+}
+.bottom {
+  padding-left: 15px;
+}
+.copyright {
+  margin-top: 25px;
+}
+.side-catalog .catalog-body .active a {
+  color: #7287fd;
+}
 body {
+  background-color: #eff1f5;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-  font-size: 16px;
-  color: #404040;
+  font-size: 18px;
+  color: #4c4f69;
   overflow-x: hidden;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 p {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 @media screen and (max-width: 768px) {
   p {
@@ -683,7 +853,7 @@ h6 {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -692,11 +862,11 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: #404040;
+  color: #4c4f69;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #dc8a78;
 }
 a img:hover,
 a img:focus {
@@ -751,11 +921,15 @@ table.table > thead td {
     border: 0;
   }
 }
+hr {
+  border-width: 2px;
+  border-color: #dce0e8;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: white;
+  border-color: #4c4f69;
 }
 pre,
 .table-responsive {
@@ -781,7 +955,7 @@ samp {
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+  color: #dc8a78;
 }
 .post-container h1,
 .post-container h2,
@@ -789,41 +963,19 @@ samp {
 .post-container h4,
 .post-container h5,
 .post-container h6 {
-  margin: 50px 0 20px;
+  margin: 25px 0 15px;
   line-height: 1.4;
-}
-.post-container h1 + p,
-.post-container h2 + p,
-.post-container h3 + p,
-.post-container h4 + p,
-.post-container h5 + p,
-.post-container h6 + p {
-  margin-top: 20px;
-}
-.post-container h2::before {
-  content: " ";
-  display: block;
-  border-bottom: 1px solid #ececec;
-  margin-top: 44px;
-  margin-bottom: 30px;
 }
 .post-container h4 {
   font-size: 22px;
   font-weight: 600;
   color: gray;
 }
-.post-container h4 + p {
-  margin-top: 10px;
-}
 .post-container h5,
 .post-container h6 {
   font-size: 20px;
   font-weight: 600;
   color: gray;
-}
-.post-container h5 + p,
-.post-container h6 + p {
-  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .post-container h1 {
@@ -891,7 +1043,7 @@ samp {
   width: 100%;
 }
 .post-container .pager li > a > span {
-  color: #a3a3a3;
+  color: #9ca0b0;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
@@ -909,7 +1061,7 @@ samp {
     position: absolute;
     right: 0;
     border: none;
-    background: white;
+    background: #dce0e8;
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
     border-radius: 2px;
@@ -983,12 +1135,12 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
-  color: white;
+  color: #dce0e8;
   height: 56px;
   line-height: 25px;
 }
@@ -1007,28 +1159,28 @@ samp {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background-color: #dce0e8;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom body {
     font-size: 20px;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #dce0e8;
     padding: 20px;
     line-height: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(239, 241, 245, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #dce0e8;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(239, 241, 245, 0.8);
   }
   .navbar-custom .nav li a:active {
     background: none;
@@ -1038,21 +1190,21 @@ samp {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .navbar-custom.invert .navbar-toggle .icon-bar {
-  background-color: #404040;
+  background-color: #4c4f69;
 }
 .navbar-custom.invert .navbar-brand {
-  color: #404040;
+  color: #4c4f69;
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
-  color: #0085a1;
+  color: #dc8a78;
 }
 .navbar-custom.invert .nav li a {
-  color: #404040;
+  color: #4c4f69;
 }
 .navbar-custom.invert .nav li a:hover,
 .navbar-custom.invert .nav li a:focus {
-  color: #0085a1;
+  color: #dc8a78;
 }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
@@ -1072,25 +1224,25 @@ samp {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #dce0e8;
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #4c4f69;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #dc8a78;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #4c4f69;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #dc8a78;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -1103,7 +1255,7 @@ samp {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #a3a3a3;
+  background-color: #9ca0b0;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1119,7 +1271,7 @@ samp {
 .intro-header.style-text .post-heading,
 .intro-header.style-text .page-heading {
   padding: 85px 0 20px;
-  color: #404040;
+  color: #4c4f69;
 }
 .intro-header.style-text .site-heading .subheading,
 .intro-header.style-text .post-heading .subheading,
@@ -1128,8 +1280,8 @@ samp {
 }
 .intro-header.style-text .tags a,
 .intro-header.style-text .tags .tag {
-  border-color: #404040;
-  color: #404040;
+  border-color: #4c4f69;
+  color: #4c4f69;
 }
 .intro-header.style-text .tags a:hover,
 .intro-header.style-text .tags .tag:hover,
@@ -1179,7 +1331,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
@@ -1207,7 +1359,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 17px;
   line-height: 1.4;
@@ -1216,7 +1368,7 @@ samp {
   margin-top: -5px;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'IBM Plex Serif', 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 16px;
@@ -1255,66 +1407,69 @@ samp {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #4c4f69;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #dc8a78;
 }
 .post-preview > a > .post-title {
-  font-size: 21px;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 22px;
   line-height: 1.3;
   margin-top: 30px;
   margin-bottom: 8px;
 }
 .post-preview > a > .post-subtitle {
-  font-size: 15px;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 17px;
   line-height: 1.3;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  font-family: 'Lora', 'Times New Roman', serif;
-  color: #a3a3a3;
+  font-family: 'IBM Plex Serif', 'Lora', 'Times New Roman', serif;
+  color: #9ca0b0;
   font-size: 16px;
   font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #4c4f69;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #dc8a78;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 26px;
+    font-family: "Jost", sans-serif;
+    font-size: 32px;
     line-height: 1.3;
     margin-bottom: 10px;
   }
   .post-preview > a > .post-subtitle {
-    font-size: 16px;
-  }
-  .post-preview .post-meta {
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
   }
 }
 .post-content-preview {
-  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   font-style: italic;
-  color: #a3a3a3;
+  color: #9ca0b0;
 }
 .post-content-preview:hover {
-  color: #0085a1;
+  color: #dc8a78;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .section-heading {
@@ -1350,14 +1505,14 @@ footer .copyright a {
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085a1;
+  color: #dc8a78;
 }
 .btn {
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 14px;
@@ -1372,8 +1527,8 @@ footer .copyright a:focus {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #dc8a78;
+  border: 1px solid #dc8a78;
   color: white;
 }
 .pager {
@@ -1386,7 +1541,7 @@ footer .copyright a:focus {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 13px;
@@ -1404,13 +1559,13 @@ footer .copyright a:focus {
   }
 }
 .pager li > a {
-  color: #404040;
+  color: #4c4f69;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #dc8a78;
+  border: 1px solid #dc8a78;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
@@ -1420,19 +1575,19 @@ footer .copyright a:focus {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #a3a3a3;
-  background-color: #404040;
+  color: #9ca0b0;
+  background-color: #4c4f69;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #dc8a78;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #dc8a78;
 }
 img::selection {
   color: white;
@@ -1457,14 +1612,13 @@ img::-moz-selection {
 .tags .tag {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 999em;
-  padding: 0 10px 0 10px;
+  border-radius: 8px;
+  padding: 2px 10px 2px 10px;
   color: #ffffff;
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
   margin: 0 1px;
-  margin-bottom: 6px;
   cursor: pointer;
 }
 .tags a > sup,
@@ -1503,7 +1657,9 @@ img::-moz-selection {
   transition-property: all;
   transition-duration: 0.4s;
   transition-timing-function: ease;
-  font-size: 14px;
+  font-size: 17px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
   border: none;
   line-height: 28px;
   margin: 0 2px;
@@ -1516,7 +1672,7 @@ img::-moz-selection {
 #tag_cloud .tag:active,
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
-  background-color: #0085a1 !important;
+  background-color: #dc8a78 !important;
 }
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
@@ -1525,7 +1681,7 @@ img::-moz-selection {
 #tag_cloud a.tag-button--all,
 #tag_cloud .tag.tag-button--all {
   font-weight: 700;
-  color: #0085a1 !important;
+  color: #e64553 !important;
 }
 #tag_cloud a.tag-button--all:hover,
 #tag_cloud .tag.tag-button--all:hover,
@@ -1552,7 +1708,7 @@ img::-moz-selection {
   margin-top: 0px;
 }
 .listing-seperator {
-  color: #0085a1;
+  color: #e64553;
   font-size: 21px !important;
 }
 .listing-seperator::before {
@@ -1573,7 +1729,7 @@ img::-moz-selection {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
 .mini-post-list .post-preview {

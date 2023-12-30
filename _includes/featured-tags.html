@@ -6,6 +6,8 @@
 <section>
     {% if include.bottom %}
         <hr class="hidden-sm hidden-xs">
+    {% else %}
+        <hr>
     {% endif %}
     <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
     <div class="tags">
