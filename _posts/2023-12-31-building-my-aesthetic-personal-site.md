@@ -38,6 +38,7 @@ Summarizing the changes I made:
 - Added tags of posts on the home page and improved the tags' appearance.
 - Changed fonts (see in `variables.less`), increased font size, and reordered many things to my liking.
 - Updated Font Awesome v5 (there might be some icons that I didn't use and haven't been migrated to the new version, please create an issue if you find any).
+- Github action `jekyll.yml` file that automatically build and deploy the site after committing.
 
 ### Colors
 I decided to revamp the entire website with the famous [Catppuccin](https://github.com/catppuccin/catppuccin) color palette. You can see all the colors in `less/variables.less`, taken from the "Palette" section of Catppuccin.

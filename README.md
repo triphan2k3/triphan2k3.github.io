@@ -1,63 +1,47 @@
-[Hux Blog](https://huangxuan.me)
+[🌸🐳 HynDuf 👋](https://hynduf.github.io)
 ================================
 
-> I never expect this becomes popular.
-
-![](http://huangxuan.me/img/blog-desktop.jpg)
-
-
-[User Manual 👉](_doc/Manual.md)
---------------------------------------------------
-
-### Getting Started
-
-1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
-
-2. Installed dependencies in the `Gemfile`:
-
-```sh
-$ bundle install 
-```
-
-3. Serve the website (`localhost:4000` by default):
-
-```sh
-$ bundle exec jekyll serve  # alternatively, npm start
-```
-
-### Development (Build From Source)
-
-To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
-
-Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
-
-Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
-
-This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
+<p align="center">
+	<a href="https://github.com/HynDuf/hynduf.github.io/stargazers">
+		<img alt="Stargazers" src="https://img.shields.io/github/stars/HynDuf/hynduf.github.io?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
+	<a href="https://github.com/HynDuf/hynduf.github.io/issues">
+		<img alt="Issues" src="https://img.shields.io/github/issues/HynDuf/hynduf.github.io?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
+</p>
 
 
-### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
+Please read the original [README.md](https://github.com/Huxpro/huxpro.github.io) first to have the full guide.
 
+This is a heavily-customized [fork](https://github.com/HynDuf/hynduf.github.io) of the incredible [Hux Blog - Jekyll Theme](https://github.com/Huxpro/huxpro.github.io). I have a blog about how I did it, [check it out](https://hynduf.github.io/2023/12/31/building-my-aesthetic-personal-site/).
 
-Other Resources
----------------
+⚠️  Note: Much of the code was added on the fly, so it may appear somewhat messy. I plan to clean it up in the future.
+## Customize
+The files you typically change are in the directories `_includes`, `_layouts`, and `less`. Most of the new changes I made are in `less/hynduf.less`.
 
-Ports
-- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
-- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
+Summarizing the changes I made:
+- Home page view (the banner image took up so much space, so I replaced it with some random quotes of my own).
+- Added tags of posts on the home page and improved the tags' appearance.
+- Changed fonts (see in `variables.less`), increased font size, and reordered many things to my liking.
+- Updated Font Awesome v5 (there might be some icons that I didn't use and haven't been migrated to the new version, please create an issue if you find any).
+- Github action `jekyll.yml` file that automatically build and deploy the site after committing. You might need to change it if you fork this.
+- [Catppuccin color palette](https://github.com/catppuccin/catppuccin)
+    - Latte theme and Rosewater accent color for light mode.
+    - Mocha theme and Mauve accent color for dark mode.
+- Dark mode switcher.
 
-[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
-- Out of date. Helps wanted for updating it on par with the main repo
+TODOS:
+- [ ] **Projects** page with grid-like and image preview for projects.
+- [ ] **Documentation-like Posts**: It's like a group-of-posts feature (Ex: Mkdocs, Just the docs...). Each post will have a left bar to navigate to other posts in the same group.
 
-Translation
-- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+## Preview
+Here are some previews of the revamped website.
 
+![home-light](assets/home-light.png)
+![home-dark](assets/home-dark.png)
+![about-light](assets/about-light.png)
+![about-dark](assets/about-dark.png)
+![archive-light](assets/archive-light.png)
+![archive-dark](assets/archive-dark.png)
+![post-light](assets/post-light.png)
+![post-dark](assets/post-dark.png)
 
-License
--------
-
-Apache License 2.0.
-Copyright (c) 2015-present Huxpro
-
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
-Copyright (c) 2013-2016 Blackrock Digital LLC.
+I think that's it. Please feel free to create any issues or contribute to the site. Special thanks to [Hux Blog](https://github.com/Huxpro/huxpro.github.io) for the incredible Jekyll theme, [Catppuccin](https://github.com/catppuccin/catppuccin) for the beautiful color palette, and a big shoutout to myself for having time to waste 😋.
