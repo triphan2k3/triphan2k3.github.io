@@ -6,7 +6,7 @@ Hi there 👋, I'm Huynh Tien Dung (HynDuf).
 - ✨ I do things wholeheartedly.
 - 📫 Fun fact: 
   - 🔭 I used to do a lot of [Competitive Programming](http://codeforces.com/profile/_LNHTD_).
-  - 🌸 I obsessed with self-improvement.
+  - 🌸 I obsess with self-improvement.
   - ⚡ I use Arch btw.
   - 💎 I love Obsidian.
 

@@ -4,7 +4,7 @@ layout: default
 
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+<img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0">
 
 <!-- Post Header -->
 {% include intro-header.html type='post' %}
@@ -26,6 +26,10 @@ layout: default
                 {% endif %}
 
 				{{ content }}
+
+                <div class='header-line'>
+                    <strong> ━━━━━━  ❖  ━━━━━━ </strong>
+                </div>
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
@@ -85,9 +89,6 @@ layout: default
                 col-lg-8 col-lg-offset-1
                 col-md-10 col-md-offset-0
                 sidebar-container bottom">
-                <div class='header-line'>
-                    <strong> ━━━━━━  ❖  ━━━━━━ </strong>
-                </div>
 
                 <!-- Featured Tags -->
                 {% include featured-tags.html bottom=true %}
