@@ -6,11 +6,12 @@ Hi there 👋, I'm Huynh Tien Dung (HynDuf).
 - ✨ I do things wholeheartedly.
 - 📫 Fun fact: 
   - 🔭 I used to do a lot of [Competitive Programming](http://codeforces.com/profile/_LNHTD_).
+  - 🌸 I obsessed with self-improvement.
   - ⚡ I use Arch btw.
   - 💎 I love Obsidian.
 
 # ABOUT THIS WEBSITE
-This is a heavily-customized [fork](https://github.com/HynDuf/hynduf.github.io) of the incredible [Hux Blog - Jekyll Theme](https://github.com/Huxpro/huxpro.github.io). I have a blog about how I did it, [check it out]().
+This is a heavily-customized [fork](https://github.com/HynDuf/hynduf.github.io) of the incredible [Hux Blog - Jekyll Theme](https://github.com/Huxpro/huxpro.github.io). I have a blog about how I did it, [check it out](https://hynduf.github.io/2023/12/31/building-my-aesthetic-personal-site/).
 
 # CONTACT
 If you want to reach me out then feel free to DM me on any social media.
