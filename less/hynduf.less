@@ -10,7 +10,7 @@
 .animated-text i {
     font-style: italic;
     font-size: 19px;
-    color: #333;
+    color: var(--main-text-color);
     margin: 5px;
     padding: 0;
     opacity: 0;
@@ -24,7 +24,7 @@
 
 .animated-text p {
     font-size: 18px;
-    color: #333;
+    color: var(--main-text-color);
     margin: 0;
     padding: 0;
     opacity: 0;
@@ -32,7 +32,7 @@
 }
 @keyframes slide-in {
     from {
-        transform: translateX(-1%); 
+        transform: translateX(-5%); 
         opacity: 0;
     }
     to {
@@ -62,15 +62,15 @@
         border: 0;
         border-radius: 0;
         padding: 3px 10px 3px 10px;
-        color: @latte-rosewater;
-        background-color: @latte-rosewater-background;
+        color: var(--accent-color);
+        background-color: var(--accent-color-background);
         margin: 0;
         font-size: 16px;
         font-weight: 700;
         &:hover,
         &:active {
-            color: @latte-maroon;
-            background-color: @latte-maroon-background;
+            color: var(--accent-color-deep);
+            background-color: var(--accent-color-deep-background);
         }
       }
 }
@@ -83,21 +83,21 @@
     border: 0;
     border-radius: 0;
     padding: 3px 10px 3px 10px;
-    color: @latte-rosewater;
-    background-color: @latte-rosewater-background;
+    color: var(--accent-color);
+    background-color: var(--accent-color-background);
     margin: 0 2px;
     font-size: 16px;
     font-weight: 700;
     &:hover,
     &:active {
-        color: @latte-maroon;
-        background-color: @latte-maroon-background;
+        color: var(--accent-color-deep);
+        background-color: var(--accent-color-deep-background);
     }
   }
 }
 
 .fa-circle {
-    color: @latte-overlay1;
+    color: var(--overlay2-color);
 }
 
 .sidebar-container h5 {
@@ -144,7 +144,7 @@
 
 a, a:focus {outline : none;}
 .post-container .pager li > a {
-    background-color: @latte-base;
+    background-color: var(--main-background-color);
 }
 
 .header-line {
@@ -157,6 +157,7 @@ a, a:focus {outline : none;}
 }
 
 .copyright {
+    color: var(--subtext0-color);
     margin-top: 25px;
 }
 .side-catalog .catalog-body .active a {

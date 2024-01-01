@@ -96,9 +96,24 @@
 <!-- jquery.tagcloud.js -->
 <script>
     async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
+	    let theme = sessionStorage.getItem('theme');
+        let colorStart, colorEnd;
+        if (theme === "dark") {
+            colorStart = '#eed49f';
+            colorEnd = '#dd7878';
+        } else if (theme === "light") {
+            colorStart = '#8aadf4';
+            colorEnd = '#8839ef';
+        } else if (systemInitiatedDark.matches) {
+            colorStart = '#eed49f';
+            colorEnd = '#dd7878';
+        } else {
+            colorStart = '#8aadf4';
+            colorEnd = '#8839ef';
+        }
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
-            color: { start: '#85c1dc', end: '#7287fd' },
+            color: { start: colorStart, end: colorEnd },
         };
         $('#tag_cloud a').tagcloud();
     })
@@ -327,3 +342,6 @@
         });
     });
 </script>
+
+<script src="/js/mode-switcher.js"></script>
+
