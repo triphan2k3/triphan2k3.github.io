@@ -11,12 +11,12 @@ html[data-theme="light"] {
   --mantle-background-color: #e6e9ef;
   --main-text-color: #4c4f69;
   --subtext0-color: #6c6f85;
-  --overlay2-color: #7c7f93;
+  --overlay1-color: #8c8fa1;
   --accent-color: #dc8a78;
   --accent-color-background: #f6e2dd;
   --accent-color-deep: #e64553;
   --accent-color-deep-background: #f8ccd0;
-  --hr-color: #dce0e8;
+  --hr-color: #bcc0cc;
   --link-color: #1e66f5;
 }
 html[data-theme="dark"] {
@@ -26,12 +26,12 @@ html[data-theme="dark"] {
   --mantle-background-color: #181825;
   --main-text-color: #cdd6f4;
   --subtext0-color: #a6adc8;
-  --overlay2-color: #9399b2;
+  --overlay1-color: #7f849c;
   --accent-color: #cba6f7;
   --accent-color-background: #26074b;
   --accent-color-deep: #89b4fa;
   --accent-color-deep-background: #021635;
-  --hr-color: #1e1e2e;
+  --hr-color: #45475a;
   --link-color: #7287fd;
 }
 @media (prefers-color-scheme: dark) {
@@ -43,12 +43,12 @@ html[data-theme="dark"] {
     --mantle-background-color: #181825;
     --main-text-color: #cdd6f4;
     --subtext0-color: #a6adc8;
-    --overlay2-color: #9399b2;
+    --overlay1-color: #7f849c;
     --accent-color: #cba6f7;
     --accent-color-background: #26074b;
     --accent-color-deep: #89b4fa;
     --accent-color-deep-background: #021635;
-    --hr-color: #1e1e2e;
+    --hr-color: #45475a;
     --link-color: #7287fd;
   }
   html[data-theme="light"] {
@@ -58,12 +58,12 @@ html[data-theme="dark"] {
     --mantle-background-color: #e6e9ef;
     --main-text-color: #4c4f69;
     --subtext0-color: #6c6f85;
-    --overlay2-color: #7c7f93;
+    --overlay1-color: #8c8fa1;
     --accent-color: #dc8a78;
     --accent-color-background: #f6e2dd;
     --accent-color-deep: #e64553;
     --accent-color-deep-background: #f8ccd0;
-    --hr-color: #dce0e8;
+    --hr-color: #bcc0cc;
     --link-color: #1e66f5;
   }
 }
@@ -827,7 +827,7 @@ pre.highlight {
   background-color: var(--accent-color-deep-background);
 }
 .fa-circle {
-  color: var(--overlay2-color);
+  color: var(--subtext0-color);
 }
 .sidebar-container h5 {
   padding-bottom: 10px;
@@ -1667,7 +1667,7 @@ img::-moz-selection {
   display: none !important;
 }
 .tags {
-  margin-bottom: -5px;
+  margin-bottom: 5px;
 }
 .tags.tags-sup a,
 .tags.tags-sup .tag {
@@ -1753,6 +1753,7 @@ img::-moz-selection {
 #tag_cloud .tag.tag-button--all:active,
 #tag_cloud a.tag-button--all.focus,
 #tag_cloud .tag.tag-button--all.focus {
+  color: var(--accent-color) !important;
   background-color: var(--crust-background-color) !important;
 }
 @media only screen and (min-width: 768px) {
