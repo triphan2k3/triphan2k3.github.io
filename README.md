@@ -29,6 +29,7 @@ Summarizing the changes I made:
 - Dark mode switcher.
 
 TODOS:
+- [ ] **Streamline Multilanguage Option**: Current workflow requires user to change too many things.
 - [ ] **Projects** page with grid-like and image preview for projects.
 - [ ] **Documentation-like Posts**: It's like a group-of-posts feature (Ex: Mkdocs, Just the docs...). Each post will have a left bar to navigate to other posts in the same group.
 
