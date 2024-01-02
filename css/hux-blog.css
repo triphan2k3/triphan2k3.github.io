@@ -1407,7 +1407,7 @@ samp {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 60px 0 60px;
+  padding: 25px 0 35px;
   color: white;
 }
 .intro-header .site-heading .subheading,
@@ -1415,8 +1415,15 @@ samp {
 .intro-header .page-heading .subheading {
   margin-bottom: 15px;
 }
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding: 60px 0 60px;
+  }
+}
 .intro-header .site-heading {
-  padding: 95px 0 70px;
+  padding: 90px 0 70px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
