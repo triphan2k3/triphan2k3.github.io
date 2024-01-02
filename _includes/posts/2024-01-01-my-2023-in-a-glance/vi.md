@@ -27,5 +27,5 @@ Gần đây thì mình có thử một lịch trình ngủ khác. Đó là ngủ
     - [VietCard - Ứng dụng di động flashcard](https://github.com/HynDuf/vietcard) cho môn Thiết kế ở UET.
     - [Trang Blog cá nhân](https://hynduf.github.io/): Mình mò và nghịch ra được trang blog này trong 3 ngày cuối năm 2023 để có thể đăng bài này lên kịp lúc 😇.
 
-## Thank you
+## Lời kết
 Nãy giờ nhận ra mình toàn viết về các gợi ý linh tinh trong năm mà chưa thấy review gì lắm 🥹. Nhìn lại thì vẫn có nhiều thăng trầm như mọi năm, nhưng mình sẽ trân trọng tất cả vì đã góp phần tạo ra mình ở hiện tại. Cuối cùng thì mình xin gửi những lời cảm ơn to lớn tới gia đình và bạn bè. Cảm ơn bạn đã đọc đến dòng cuối cùng này; xin chúc bạn có một năm mới tuyệt vời và khỏe mạnh trong 2024.
