@@ -998,17 +998,34 @@ br + small.img-hint {
 img.shadow {
   box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
-select {
+.lang {
+  display: inline-block;
   -webkit-appearance: none;
   margin-top: 15px;
-  color: var(--link-color);
-  border-color: var(--link-color);
-  padding: 0em 0.4em;
-  background: white;
+  color: var(--accent-color-deep);
+  border: 1px solid var(--accent-color-deep);
+  border-radius: 10px;
+  padding: 0 0 0 10px;
+  background: var(--main-background-color);
+}
+.lang.sel-lang {
+  min-height: 28px;
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+}
+select {
+  text-align: center;
+  vertical-align: baseline;
+  color: var(--accent-color-deep);
+  border: none;
+  padding: 0 5px;
+  margin: 0em 5px;
+  background: var(--main-background-color);
 }
 select.sel-lang {
   min-height: 28px;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
 }
 table {
   margin-top: 10px;

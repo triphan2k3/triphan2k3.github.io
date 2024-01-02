@@ -236,7 +236,7 @@
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
-    var $vn = document.querySelector(".vn");
+    var $vi = document.querySelector(".vi");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
@@ -252,19 +252,19 @@
     // handle render
     function _render() {
         var lang = getLang()
-        // en
-        if (lang == "en") {
+        // Fallback to English if `lang` is empty
+        if (lang == "vi") {
+            $select.selectedIndex = 1;
+            $vi.style.display = "block";
+            $vi.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        } else {
             $select.selectedIndex = 0;
             $en.style.display = "block";
             $en.classList.add("active");
-            $vn.style.display = "none";
-            $vn.classList.remove("active");
-        } else {
-            $select.selectedIndex = 1;
-            $vn.style.display = "block";
-            $vn.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
+            $vi.style.display = "none";
+            $vi.classList.remove("active");
         }
         // interop with catalog 
         generateCatalog(".catalog-body");
@@ -273,7 +273,7 @@
     // handle select change
     function onLanChange(index) {
         if (index == 1) {
-            lang = "vn"
+            lang = "vi"
         } else {
             lang = "en"
         }
