@@ -11,6 +11,7 @@ html[data-theme="light"] {
   --mantle-background-color: #e6e9ef;
   --main-text-color: #4c4f69;
   --subtext0-color: #6c6f85;
+  --surface0-color: #ccd0da;
   --overlay1-color: #8c8fa1;
   --overlay0-color: #9ca0b0;
   --accent-color: #dc8a78;
@@ -31,6 +32,7 @@ html[data-theme="dark"] {
   --mantle-background-color: #181825;
   --main-text-color: #cdd6f4;
   --subtext0-color: #a6adc8;
+  --surface0-color: #313244;
   --overlay1-color: #7f849c;
   --overlay0-color: #6c7086;
   --accent-color: #cba6f7;
@@ -53,6 +55,7 @@ html[data-theme="dark"] {
     --mantle-background-color: #181825;
     --main-text-color: #cdd6f4;
     --subtext0-color: #a6adc8;
+    --surface0-color: #313244;
     --overlay1-color: #7f849c;
     --overlay0-color: #6c7086;
     --accent-color: #cba6f7;
@@ -73,6 +76,7 @@ html[data-theme="dark"] {
     --mantle-background-color: #e6e9ef;
     --main-text-color: #4c4f69;
     --subtext0-color: #6c6f85;
+    --surface0-color: #ccd0da;
     --overlay1-color: #8c8fa1;
     --overlay0-color: #9ca0b0;
     --accent-color: #dc8a78;
@@ -669,7 +673,7 @@ pre.highlight {
   bottom: 0;
   left: 0;
   z-index: 100;
-  background: #fff;
+  background: var(--main-background-color);
   -webkit-transition: all 400ms cubic-bezier(0.32, 1, 0.23, 1);
   transition: all 400ms cubic-bezier(0.32, 1, 0.23, 1);
   -webkit-transform: translate(0, 100%);
@@ -711,15 +715,18 @@ pre.highlight {
   font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
   border: none;
   outline: none;
-  padding: 0;
+  padding: 0 0 0 5px;
   margin: 0;
   width: 100%;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   color: var(--main-text-color);
+  background-color: var(--surface0-color);
 }
 @media only screen and (min-width: 768px) {
   .search-page #search-input {
+    font-size: 30px;
+    padding-left: 10px;
     margin-left: 20px;
   }
 }
