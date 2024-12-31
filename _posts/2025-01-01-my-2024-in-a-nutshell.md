@@ -2,16 +2,24 @@
 layout: post
 title: "My 2024 In A Nutshell 🎇🌸"
 subtitle: "Let things go their natural course and focus on how we navigate them instead of trying to control them."
-author: "TriPHan"
-header-img: "/assets/wallpaper-sea.png"
+author: "TriPhan"
+header-img: "assets/wallpaper-sea.png"
 header-mask: 0.4
-cover-img: "/assets/wallpaper-sea.png"
-share-img: "/assets/wallpaper-sea.png"
-thumbnail-img: "/assets/wallpaper-sea.png"
+cover-img: "assets/wallpaper-sea.png"
+share-img: "assets/wallpaper-sea.png"
+thumbnail-img: "assets/wallpaper-sea.png"
 multilingual: true
 tags:
   - Life
 ---
+<style>
+.visibility {
+  visibility: hidden;
+}
+</style>
+<div class='visibility'>
+  <img src="/assets/wallpaper-sea.png" width=0>
+</div>
 
 <!-- English Version -->
 <div class="en post-container">
