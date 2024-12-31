@@ -1,11 +1,11 @@
 # Site settings
-title: "🌸🐳 \  HynDuf \  👋"
-SEOTitle: HynDuf Blog
+title: "Tri Phan"
+SEOTitle: TriPhan
 header-img: img/hollow-knight.png
-email: hynduf@gmail.com
+email: triphan2k3@gmail.com
 description: "May it get me? 🌸"
-keyword: "hynduf, @hynduf, HynDuf's Blog, CP, Arch Linux, Obsidian"
-url: "https://hynduf.github.io" # your host, for absolute URL
+keyword: ""
+url: "https://triphan2k3.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,10 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-github_username: hynduf
-twitter_username: HynDuf
-facebook_username: HynDuf
-linkedin_username: hynduf
+github_username: triphan2k3
+# twitter_username: 
+facebook_username: fantrgtri
+linkedin_username: triphan03
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -73,7 +73,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "how far down the <br/> rabbit holes 🐇, <br/> would it take me? 🤔"
-sidebar-avatar: https://github.com/hynduf.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/397982999_2040403273010357_3708915038452200896_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHB5zQS5HLt3FQlpV4MLKhDSxMChYA-bBNLEwKFgD5sE2zBDgINuYxLfu6doRY-7tnu-PUtiHB6KRM6BG6-sWu0&_nc_ohc=ODsbU6na6n4Q7kNvgH6sftY&_nc_oc=AdiikaKlQoOMh1P3zZt7_IyWj5eGtM0O68gB2yUzRAZYUButVwqarkF8oEGNUHJgkVsy-wDbCnpMzE1wJWy3ipo2&_nc_zt=23&_nc_ht=scontent.fsgn2-3.fna&_nc_gid=AoWMdKKpp5Rs586NRQ7JwSn&oh=00_AYBqvjdWU6goT2x67UxTI2I8hrcX6A6-JlVefaz560CeUA&oe=6779CB13 # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
@@ -89,5 +89,5 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "Trí Phan", href: "https://triphan2k3.github.io/" },
+    { title: "HynDuf", href: "https://hynduf.github.io/about/" },
   ]
