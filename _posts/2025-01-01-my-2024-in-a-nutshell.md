@@ -12,14 +12,9 @@ multilingual: true
 tags:
   - Life
 ---
-<style>
-.visibility {
-  visibility: hidden;
-}
-</style>
-<div class='visibility'>
-  <img src="/assets/wallpaper-sea.png" width=0>
-</div>
+
+
+<meta property="og:image" content="https://triphan2k3.github.io/assets/wallpaper-sea.png"/>
 
 <!-- English Version -->
 <div class="en post-container">
