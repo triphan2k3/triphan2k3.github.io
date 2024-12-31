@@ -5,6 +5,7 @@ subtitle: "Let things go their natural course and focus on how we navigate them 
 author: "TriPHan"
 header-img: "assets/wallpaper-sea.png"
 header-mask: 0.4
+cover-img: "assets/wallpaper-sea.png"
 multilingual: true
 tags:
   - Life
