@@ -14,7 +14,6 @@ tags:
 ---
 
 
-<meta property="og:image" content="https://triphan2k3.github.io/assets/wallpaper-sea.png"/>
 
 <!-- English Version -->
 <div class="en post-container">
