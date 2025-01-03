@@ -35,7 +35,7 @@ Hết rồi, hi vọng năm sau có nhiều cái hơn để khoe.
 ![](/assets/2025-01-01-my-2024-in-a-nutshell/trips.png)
 
 - **Friends**: Trộm vìa là năm nay cũng gặp, cũng quen biết nhiều người mới. Impact của mỗi người lên mình mỗi khác. May mắn là tất cả những ảnh hưởng này đều tích cực.
-- **Anki**: Đây là cái app flashcard mình được seeding bởi bạn mình, mình dùng để học từ vựng là chính. Nếu nói về lí do mình dc 9.0 Reading thì là nhờ Anki. Mình cũng seeding lại cho một số người khác (cụ thể là 4), thì hình như là có 1 người dùng lâu dài.
+- **Anki**: Đây là cái app flashcard mình được seeding bởi bạn mình, mình dùng để học từ vựng là chính. Nếu nói về lí do mình dc 9.0 Reading thì là nhờ Anki. Mình cũng seeding lại cho một số người khác (cụ thể là 4), thì hình như là còn được 2 người dùng lâu dài.
 
 ## Lời kết
 Mình thì thật sự không hài lòng với chính mình của năm nay lắm, cảm thấy như năm 2024 mình đã dùng thời gian không được tối ưu lắm. Và còn nhiều thứ chưa kể khác lắm, 2024 với mình như một nốt trầm vậy, không có gì thật sự nổi bật. Nhưng mà, minh sẽ trân trọng mọi thứ mình trải qua, không hối hận gì cả. Nhưng cũng hi vọng là ngày này năm sau mình có thể viết recap với tâm thế là "2025 mình đã làm được một đống thứ hay ho". 
