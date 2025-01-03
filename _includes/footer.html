@@ -253,7 +253,7 @@
     function _render() {
         var lang = getLang()
         // Fallback to English if `lang` is empty
-        if (lang == "vi") {
+        if (lang == "vi" || lang == null) {
             $select.selectedIndex = 1;
             $vi.style.display = "block";
             $vi.classList.add("active");
