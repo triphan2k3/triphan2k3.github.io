@@ -1,4 +1,4 @@
-## Dependencies
+<!-- ## Dependencies
 
 Themes are written using Sass to keep things modular and reduce the need for repeated selectors across files. Make sure that you have the reveal.js development environment installed before proceeding: https://revealjs.com/installation/#full-setup
 
@@ -18,4 +18,4 @@ Declares a set of custom variables that the template file (step 4) expects. Can 
 This is where you override the default theme. Either by specifying variables (see [settings.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss) for reference) or by adding any selectors and styles you please.
 
 4. **Include [/css/theme/template/theme.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss)**
-The template theme file which will generate final CSS output based on the currently defined variables.
+The template theme file which will generate final CSS output based on the currently defined variables. -->
