@@ -4,8 +4,8 @@ Hi there 👋, I'm Phan Truong Tri and you could call me Tri or TriPhan.
 - 👨‍🎓 I am a senior student at [UIT - HCMVNU](https://www.uit.edu.vn/) - K16 - CS - Honors. 
 - 🌱 I’m currently learning many things to figure out what I really want to do.
 - ✨ I do things with all my heart.
-- 🔭 I used to do a lot of [Competitive Programming](https://codeforces.com/profile/Tri_Phan). And, I'm not sure whether I will continue on this hobby.
-- ⚡ I spent loads of time for English last year, and I'll continue to devote time to it this year.
+- 🔭 I used to do a lot of [Competitive Programming](https://codeforces.com/profile/Tri_Phan). And, I hope I can get on with this hobby.
+- ⚡ I spent loads of time for English last year, and I'll continue to devote time yet fewer to it this year.
 - 💎 I intends to use English as the main language in this website to practice writing.
 
 # ABOUT THIS WEBSITE
