@@ -7,22 +7,12 @@ thumbnail-img: /assets/2022-05-04-red-black-tree/red-black-tree/thumbnail.webp
 share-img: /assets/2022-05-04-red-black-tree/red-black-tree/cover.webp
 header-img: "assets/wallpaper-sea.png"
 multilingual: true
+mathjax: true
 tags:
   - Data Structure
 published: true
 table-of-contents: true
 ---
-<!-- layout: post
-title: "My 2024 In A Nutshell 🎇🌸"
-subtitle: "Let things go their natural course and focus on how we navigate them instead of trying to control them."
-author: "TriPhan"
-header-img: "assets/wallpaper-sea.png"
-header-mask: 0.4
-share-img: "assets/2024.png"
-multilingual: true
-tags:
-  - Life
---- -->
 
 
 

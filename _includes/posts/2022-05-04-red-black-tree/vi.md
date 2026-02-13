@@ -7,7 +7,7 @@
 
 Cây đỏ đen (RB Tree) là một dạng cây nhị phân tìm kiếm tự cân bằng, RB Tree được giới thiệu vào năm 1972 bởi [Rudolf Bayer](https://en.wikipedia.org/wiki/Rudolf_Bayer). 
 
-Các phép toán trên chúng như tìm kiếm (search), chèn (insert), và xóa (delete) trong thời gian O (log n), trong đó n là số các phần tử của cây.
+Các phép toán trên chúng như tìm kiếm (search), chèn (insert), và xóa (delete) trong thời gian $O(\log_n)$, trong đó $n$ là số các phần tử của cây.
 
 <a name="tong-quan"></a>
 
@@ -17,15 +17,15 @@ Các phép toán trên chúng như tìm kiếm (search), chèn (insert), và xó
 
 ## 1. Các tính chất:
 
-RB Tree là một cây tìm kiếm nhị phân (BST) nên trước hết nó thừa hưởng hết mọi tính chất của một BST thông thường. Chúng ta sẽ nói về các tính chất riêng của RB Tree. Trước hết, mỗi nút của RB Tree có thêm một thuộc tính là **color**. Color nhận một trong hai giá trị là **Red** và **Black**. Ngoài ra:
+RB Tree là một cây tìm kiếm nhị phân (BST) nên trước hết nó thừa hưởng hết mọi tính chất của một BST thông thường. Chúng ta sẽ nói về các tính chất riêng của RB Tree. Đầu tiên, điểm đặt biệt ở RB Tree so với các BST khác đó là mỗi nút của nó có thêm một thuộc tính là **color** chỉ nhận một trong hai giá trị là **Red** hoặc **Black** (**đỏ** hoặc **đen**) và đây cũng là lí do tại sao nó được đặt tên là cây đỏ đen.
 
-Ngoài ra:
+Các điểm đặc trưng của RB Tree so với các BST khác có thể được tóm tắt bằng 5 tình chất sau:
 
-1. Một nút hoặc là đỏ hoặc là đen.
-2. Gốc là đen.
-3. Tất cả các node NULL là đen.
+1. Một node trên cây sẽ có màu là đỏ hoặc đen.
+2. Nút gốc có màu là đen.
+3. Tất cả các node **NULL** đều có màu đen (con của các node lá hoặc các node không đủ 2 node con).
 4. Không tồn tại một đường đi trên cây đi từ gốc đến nút NULL mà có 2 nút liên tiếp là màu đỏ (và suy ra mọi nút đỏ đều có nút cha là đen, không có con hoặc có 2 nút con là đen).
-5. Xét một nút **bất kì**, ta luôn có **tất cả** các đường đi từ nút đó đến các **nút NULL** sẽ có số lượng nút màu đen bằng nhau (ở đây và cả trong bài viết này, đường đi có nghĩa là đi xuống node sâu hơn)
+5. Xét một node **bất kì**, ta luôn có **tất cả** các đường đi từ node đó đến các **node NULL** sẽ có số lượng node màu đen bằng nhau (ở đây và cả trong bài viết này, đường đi có nghĩa là đi từ một node xuống một node sâu hơn)
 
 <a name="su-can-bang-cua-rb-tree"></a>
 
@@ -34,7 +34,12 @@ Ngoài ra:
 Trước hết, cần lưu ý rằng, sự cân bằng của RB Tree không phải là tuyệt đối như cây AVL.
 Từ 5 tính chất trên, ta có thể rút ra được các nhận xét như sau:
 
-- Gọi _A_ là độ dài đường đi dài nhất từ gốc đến một nút NULL, _B_ là độ dài đường đi ngắn nhất từ gốc đến một nút NULL. Ta sẽ có _A <= 2B_. Chứng minh: Dựa vào tính chất _4_ và _5_, ta thấy rằng một đường đi **dài nhất có thể** sẽ có các nút đỏ, đen xen kẽ nhau mà gốc là nút đen, nên số nút đỏ trên một đường đi tối đa bằng số nút đen trên đường đi đó (không thể có hai nút đỏ liên tiếp). Và đường đi **ngắn nhất có thể** sẽ chỉ gồm các nút đen. Mà số nút đen của hai đường đi này là bằng nhau, nên đường đi **dài nhất có thể** sẽ hơn đường đi ngắn nhất một lượng bằng số nút đỏ trên đường đi đó (số nút đỏ này không vượt quá số nút đen) nên từ đó ta suy ra được tính chất trên (maxA <= 2minB -> A <= 2B đây là một logic thông thường).
+- Gọi $A$ là độ dài đường đi dài nhất từ gốc đến một nút NULL, $B$ là độ dài đường đi ngắn nhất từ gốc đến một nút NULL. Ta sẽ có $A \leq 2B$. 
+> **Chứng minh**: 
+>
+> Dựa vào tính chất **4**, ta luôn có số nút đen trên một đường đi là bằng nhau. Với một số luợng nút đen cho trước, đường đi **ngắn nhất có thể** sẽ chỉ gồm các nút đen, và đường đi **dài nhất có thể** sẽ có các nút đỏ, đen xen kẽ nhau (vì theo tính chất **5** ta không thể có 2 nút đen liên tiếp trên đường đi nhưng vì muốn độ dài đường đi càng lớn càng tốt nên ta sẽ thêm càng nhiều nút đỏ càng tốt, và thêm xen kẽ là cách tối ưu) mà gốc là nút đen, nên số nút đỏ trên một đường đi tối đa bằng số nút đen trên đường đi đó. 
+>
+> Nói các khác, chênh lệch tối đa giữa đường đi dài nhất và đường đi ngắn nhất bằng với **số lượng nút đỏ tối đa có thể có trên đường đi** và đúng bằng số nút đen trên đó. Từ đó ta suy ra được tính chất trên: $A \leq 2B$
 
 - Một nút nếu có duy nhất _1_ con thì nút con đó phải là **nút lá** có màu đỏ. Xét một nút _S_, gọi _2_ nút con của _S_ là _SL_ và _SR_. Không mất tính tổng quát, giả sử nút con khác NULL của _S_ là _SL_ và _SR_ là nút NULL. Khi đó nếu _SL_ có màu đen thì đường đi từ gốc đến một nút NULL mà đi qua _SL_ sẽ nhiều hơn ít nhất là _1_ nút đen so với đường đi đến nút NULL _SR_. Còn nếu _SL_ không phải là lá, thì _SL_ sẽ có ít nhất một nút con _C_. Khi đó giữa _SL_ và _C_ phải có **ít nhất** một nút đen và cũng dễ dàng chứng minh được đường đi đến nút NULL qua _C_ sẽ đi qua nhiều nút đen hơn đường đi đến _SR_.
 ![](/assets/2022-05-04-red-black-tree/balance.png)
