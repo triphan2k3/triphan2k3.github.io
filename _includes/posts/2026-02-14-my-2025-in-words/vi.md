@@ -69,15 +69,8 @@ Trộm vía là năm nay mình cũng hay được đi đây đi đó. Bị cái,
 
 ![](/assets/2026-02-14-my-2025-in-words/dinh.png)
 
-### Friends
-
-> People come and go
-
-Từ năm trước tới năm nay thì cái circle của mình cũng có người "go", có người "come", một số thì vẫn "remain" và một số ít nữa thì "come" và cũng đã "go".
-
-
 ## Kết
 
 Viết tới đây xong mình cũng không biết phải comment về năm nay như thế nào, có hài lòng cũng có thất vọng, có gain cũng có loss, có finish cũng có did not finish.
 
-Anyway, nhìn chung thì năm nay mình được mọi người support khá nhiều. Mình xin cảm ơn mọi người rất nhiều.
+Anyway, nhìn chung thì năm nay mình được mọi người support khá nhiều. Nên mình cũng xin cảm ơn những ai đã support mình trong năm nay, và cảm ơn mọi người đã đọc tới đây.
