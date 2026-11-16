@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-3/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 3","set":"OLL","number":3,"category":"Dot","image":"[[97. Attachments/Cube/OLL_3.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["r' R2 U R' U r U2 r' U M'","y F U R U' R' F' U F R U R' U' F'","y' f R U R' U' f' U' F R U R' U' F'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-3/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 3","set":"OLL","number":3,"category":"Dot","image":"[[97. Attachments/Cube/OLL_3.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["r' R2 U R' U r U2 r' U M'","y F U R U' R' F' U F R U R' U' F'","y' f R U R' U' f' U' F R U R' U' F'"],"tags":["cube/oll"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-pi/","tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Pi","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":5,"category":"2: Corners","image":"[[97. Attachments/Cube/2-Look_OLL_Pi.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R2 U' R2 U' R2 U2 R"],"tags":["cube/2-look-oll"],"flashcards":{"q-zeps":{"nid":1793894133557,"hash":"c6u4wqrg","sync":"7b7at7qb"}}}}
+{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-pi/","hideInFiletree":true,"tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Pi","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":5,"category":"2: Corners","image":"[[97. Attachments/Cube/2-Look_OLL_Pi.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R2 U' R2 U' R2 U2 R"],"tags":["cube/2-look-oll"],"flashcards":{"q-zeps":{"nid":1793894133557,"hash":"c6u4wqrg","sync":"7b7at7qb"}}}}
 ---
 
 

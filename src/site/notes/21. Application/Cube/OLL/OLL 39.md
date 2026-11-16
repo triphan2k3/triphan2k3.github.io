@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-39/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 39","set":"OLL","number":39,"category":"Big Lightning Bolt","image":"[[97. Attachments/Cube/OLL_39.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["L F' L' U' L U F U' L'","y2 R B' R' U' R U B U' R'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-39/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 39","set":"OLL","number":39,"category":"Big Lightning Bolt","image":"[[97. Attachments/Cube/OLL_39.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["L F' L' U' L U F U' L'","y2 R B' R' U' R U B U' R'"],"tags":["cube/oll"]}}
 ---
 
 

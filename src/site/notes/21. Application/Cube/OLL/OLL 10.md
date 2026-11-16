@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-10/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 10","set":"OLL","number":10,"category":"Fish Shape","image":"[[97. Attachments/Cube/OLL_10.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U R' F R F' R U2 R'","y2 r U R' U R U' R' U' r' R U R U' R'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-10/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 10","set":"OLL","number":10,"category":"Fish Shape","image":"[[97. Attachments/Cube/OLL_10.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U R' F R F' R U2 R'","y2 r U R' U R U' R' U' r' R U R U' R'"],"tags":["cube/oll"]}}
 ---
 
 

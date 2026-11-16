@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-29/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 29","set":"OLL","number":29,"category":"Awkward Shape","image":"[[97. Attachments/Cube/OLL_29.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U' R U' R' F' U' F R U R'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-29/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 29","set":"OLL","number":29,"category":"Awkward Shape","image":"[[97. Attachments/Cube/OLL_29.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U' R U' R' F' U' F R U R'"],"tags":["cube/oll"]}}
 ---
 
 

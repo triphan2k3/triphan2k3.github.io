@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-21/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 21","set":"OLL","number":21,"category":"Cross","image":"[[97. Attachments/Cube/OLL_21.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R' U' R U R' U' R U' R'","y R U R' U R U' R' U R U2 R'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-21/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 21","set":"OLL","number":21,"category":"Cross","image":"[[97. Attachments/Cube/OLL_21.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R' U' R U R' U' R U' R'","y R U R' U R U' R' U R U2 R'"],"tags":["cube/oll"]}}
 ---
 
 

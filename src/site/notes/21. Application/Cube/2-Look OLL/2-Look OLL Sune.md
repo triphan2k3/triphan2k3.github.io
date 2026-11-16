@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-sune/","tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Sune","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":10,"category":"2: Corners","image":"[[97. Attachments/Cube/2-Look_OLL_Sune.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U R U2 R'","y' R' U2 R U R' U R"],"tags":["cube/2-look-oll"],"flashcards":{"q-xsu8":{"nid":1793894132916,"hash":"zjxz35ge","sync":"da4ejgyz"}}}}
+{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-sune/","hideInFiletree":true,"tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Sune","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":10,"category":"2: Corners","image":"[[97. Attachments/Cube/2-Look_OLL_Sune.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' U R U2 R'","y' R' U2 R U R' U R"],"tags":["cube/2-look-oll"],"flashcards":{"q-xsu8":{"nid":1793894132916,"hash":"zjxz35ge","sync":"da4ejgyz"}}}}
 ---
 
 

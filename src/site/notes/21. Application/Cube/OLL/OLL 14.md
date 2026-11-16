@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-14/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 14","set":"OLL","number":14,"category":"Knight Move Shape","image":"[[97. Attachments/Cube/OLL_14.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R' F R U R' F' R F U' F'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-14/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 14","set":"OLL","number":14,"category":"Knight Move Shape","image":"[[97. Attachments/Cube/OLL_14.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R' F R U R' F' R F U' F'"],"tags":["cube/oll"]}}
 ---
 
 
