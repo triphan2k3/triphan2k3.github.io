@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-ub/","tags":["cube/pll"],"dg-note-properties":{"name":"Ub Perm","set":"PLL","number":4,"category":"Edges Only","image":"[[97. Attachments/Cube/PLL_Ub.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["M2 U' M U2 M' U' M2","R2 U R U R' U' R' U' R' U R'","y2 R' U R' U' R' U' R' U R U R2"],"tags":["cube/pll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-ub/","hideInFiletree":true,"tags":["cube/pll"],"dg-note-properties":{"name":"Ub Perm","set":"PLL","number":4,"category":"Edges Only","image":"[[97. Attachments/Cube/PLL_Ub.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["M2 U' M U2 M' U' M2","R2 U R U R' U' R' U' R' U R'","y2 R' U R' U' R' U' R' U R U R2"],"tags":["cube/pll"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-y/","tags":["cube/pll"],"dg-note-properties":{"name":"Y Perm","set":"PLL","number":14,"category":"Diagonal Corner Swap","image":"[[97. Attachments/Cube/PLL_Y.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["F R U' R' U' R U R' F' R U R' U' R' F R F'","F R' F R2 U' R' U' R U R' F' R U R' U' F'"],"tags":["cube/pll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-y/","hideInFiletree":true,"tags":["cube/pll"],"dg-note-properties":{"name":"Y Perm","set":"PLL","number":14,"category":"Diagonal Corner Swap","image":"[[97. Attachments/Cube/PLL_Y.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["F R U' R' U' R U R' F' R U R' U' R' F R F'","F R' F R2 U' R' U' R U R' F' R U R' U' F'"],"tags":["cube/pll"]}}
 ---
 
 

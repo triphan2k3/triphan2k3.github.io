@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-jb/","tags":["cube/pll"],"dg-note-properties":{"name":"Jb Perm","set":"PLL","number":10,"category":"Adjacent Corner Swap","image":"[[97. Attachments/Cube/PLL_Jb.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' F' R U R' U' R' F R2 U' R'"],"tags":["cube/pll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/pll/pll-jb/","hideInFiletree":true,"tags":["cube/pll"],"dg-note-properties":{"name":"Jb Perm","set":"PLL","number":10,"category":"Adjacent Corner Swap","image":"[[97. Attachments/Cube/PLL_Jb.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U R' F' R U R' U' R' F R2 U' R'"],"tags":["cube/pll"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-50/","tags":["cube/oll"],"dg-note-properties":{"name":"OLL 50","set":"OLL","number":50,"category":"Small L Shape","image":"[[97. Attachments/Cube/OLL_50.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["r' U r2 U' r2 U' r2 U r'"],"tags":["cube/oll"]}}
+{"dg-publish":true,"permalink":"/21-application/cube/oll/oll-50/","hideInFiletree":true,"tags":["cube/oll"],"dg-note-properties":{"name":"OLL 50","set":"OLL","number":50,"category":"Small L Shape","image":"[[97. Attachments/Cube/OLL_50.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["r' U r2 U' r2 U' r2 U r'"],"tags":["cube/oll"]}}
 ---
 
 
