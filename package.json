@@ -14,7 +14,7 @@
         "build": "npm-run-all get-theme --parallel build:*",
         "test": "vitest run --exclude \"src/plugins/!(dg-*)/**\"",
         "publish:local": "node scripts/publish-local.js",
-        "site:build": "npm run build && cp -R static/. dist/ && cd blog && bundle exec jekyll build -d ../dist/blog",
+        "site:build": "npm run build && cp -R static/. dist/",
         "serve:dist": "python3 -m http.server 8080 -d dist"
     },
     "keywords": [],
