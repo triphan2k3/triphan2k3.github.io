@@ -1,11 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-pi/","tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Pi","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":5,"category":"2: Corners","image":"[[2-Look_OLL_Pi.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R2 U' R2 U' R2 U2 R"],"tags":["cube/2-look-oll"],"flashcards":{"q-zeps":{"nid":1793894133557,"hash":"c6u4wqrg","sync":"7b7at7qb"}}}}
+{"dg-publish":true,"permalink":"/21-application/cube/2-look-oll/2-look-oll-pi/","tags":["cube/2-look-oll"],"dg-note-properties":{"name":"Pi","set":"2-Look OLL","cards-deck":"Cube::2-Look OLL","number":5,"category":"2: Corners","image":"[[97. Attachments/Cube/2-Look_OLL_Pi.svg]]","status":"Unlearned","finger_trick":null,"related_cases":null,"solutions":["R U2 R2 U' R2 U' R2 U2 R"],"tags":["cube/2-look-oll"],"flashcards":{"q-zeps":{"nid":1793894133557,"hash":"c6u4wqrg","sync":"7b7at7qb"}}}}
 ---
 
-![2-Look_OLL_Pi.svg\|150](/img/user/97.%20Attachments/Cube/2-Look_OLL_Pi.svg) #card
 
-- **Pi**: `R U2 R2 U' R2 U' R2 U2 R`
-^q-zeps
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" width="150" height="114"><rect x="42" y="42" width="30" height="30" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="74" y="104" width="26" height="8" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="72" y="72" width="30" height="30" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="104" y="74" width="8" height="26" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="42" y="72" width="30" height="30" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="44" y="104" width="26" height="8" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="2" y="74" width="8" height="26" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="14" y="104" width="26" height="8" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="12" y="72" width="30" height="30" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="42" y="12" width="30" height="30" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="44" y="2" width="26" height="8" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="72" y="42" width="30" height="30" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="104" y="44" width="8" height="26" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="74" y="2" width="26" height="8" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="72" y="12" width="30" height="30" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="104" y="14" width="8" height="26" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="12" y="42" width="30" height="30" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="2" y="44" width="8" height="26" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="2" y="14" width="8" height="26" fill="#fefe00" stroke="#111" stroke-width="1.5"/><rect x="14" y="2" width="26" height="8" fill="#4a4d52" stroke="#111" stroke-width="1.5"/><rect x="12" y="12" width="30" height="30" fill="#4a4d52" stroke="#111" stroke-width="1.5"/></svg> #card
+
+- **Pi**: `R U2 R2 U' R2 U' R2 U2 R`{ #q-zeps}
+
 
 ## Notes
 

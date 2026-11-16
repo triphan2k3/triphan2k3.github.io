@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/05-write/blog/2025-01-01-my-2024-in-a-nutshell/","title":"My 2024 In A Nutshell 🎇🌸","tags":["Life"],"dg-note-properties":{"title":"My 2024 In A Nutshell 🎇🌸","subtitle":"Let things go their natural course and focus on how we navigate them instead of trying to control them.","date":"2025-01-01T00:00:00.000Z","tags":["Life"]}}
+{"dg-publish":true,"permalink":"/05-write/blog/2025-01-01-my-2024-in-a-nutshell/","title":"My 2024 In A Nutshell 🎇🌸","tags":["Life"],"dg-note-properties":{"title":"My 2024 In A Nutshell 🎇🌸","subtitle":"Let things go their natural course and focus on how we navigate them instead of trying to control them.","date":"2025-01-01","tags":["Life"]}}
 ---
+
 > 2024, xin chào và không hẹn gặp lại
 
 Vì một số động lực đến từ bạn mình nên giờ mình có hứng để fork cái repo này về và viết linh tinh. Vốn dĩ ban đầu mình định viết bằng Tiếng Anh, nhưng mà mình thấy hơi mất thời gian, nên là để sau vậy. Ok, như tiêu đề, thì đây là recap 2024.
