@@ -1,48 +1,244 @@
-[🌸🐳 HynDuf 👋](https://hynduf.github.io)
-================================
-
 <p align="center">
-	<a href="https://github.com/HynDuf/hynduf.github.io/stargazers">
-		<img alt="Stargazers" src="https://img.shields.io/github/stars/HynDuf/hynduf.github.io?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
-	<a href="https://github.com/HynDuf/hynduf.github.io/issues">
-		<img alt="Issues" src="https://img.shields.io/github/issues/HynDuf/hynduf.github.io?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/digital-garden-dark.svg">
+    <img src="img/digital-garden.svg" alt="Digital Garden logo" width="128" height="128">
+  </picture>
 </p>
 
+# Digital Obsidian Garden
+This is the template to be used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden).
+See the README in the plugin repo for information on how to set it up.
 
-Please read the original [README.md](https://github.com/Huxpro/huxpro.github.io) first to have the full guide.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
 
-This is a heavily-customized [fork](https://github.com/HynDuf/hynduf.github.io) of the incredible [Hux Blog - Jekyll Theme](https://github.com/Huxpro/huxpro.github.io). I have a blog about how I did it, [check it out](https://hynduf.github.io/2023/12/31/building-my-aesthetic-personal-site/).
+---
+## Docs
+Docs are available at [docs.forestry.md](https://docs.forestry.md/)
 
-⚠️  Note: Much of the code was added on the fly, so it may appear somewhat messy. I plan to clean it up in the future.
-## Customize
-The files you typically change are in the directories `_includes`, `_layouts`, and `less`. Most of the new changes I made are in `less/hynduf.less`.
+---
+## Plugins
 
-Summarizing the changes I made:
-- Home page view (the banner image took up so much space, so I replaced it with some random quotes of my own).
-- Added tags of posts on the home page and improved the tags' appearance.
-- Changed fonts (see in `variables.less`), increased font size, and reordered many things to my liking.
-- Updated Font Awesome v5 (there might be some icons that I didn't use and haven't been migrated to the new version, please create an issue if you find any).
-- Github action `jekyll.yml` file that automatically build and deploy the site after committing. You might need to change it if you fork this.
-- [Catppuccin color palette](https://github.com/catppuccin/catppuccin)
-    - Latte theme and Rosewater accent color for light mode.
-    - Mocha theme and Mauve accent color for dark mode.
-- Dark mode switcher.
+The garden is extensible through plugins: directories under `src/plugins/`
+that add markup to layout slots, site-wide styles and scripts, and
+build-time Eleventy/markdown-it hooks. Core features like search
+(`dg-search`), link previews (`dg-link-preview`), timestamps
+(`dg-timestamps`), and math (`dg-math`) are themselves plugins built on
+this API — `dg-link-preview` is the smallest one to read first.
 
-TODOS:
-- [ ] **Streamline Multilanguage Option**: Current workflow requires user to change too many things.
-- [ ] **Projects** page with grid-like and image preview for projects.
-- [ ] **Documentation-like Posts**: It's like a group-of-posts feature (Ex: Mkdocs, Just the docs...). Each post will have a left bar to navigate to other posts in the same group.
+- Docs (installing plugins, writing your own): [docs.forestry.md](https://docs.forestry.md/)
+- Reference code: the first-party plugins under [`src/plugins/`](src/plugins/)
+- Building plugins with an AI agent: this repo ships a
+  [`garden-plugin-author` skill](skills/garden-plugin-author/SKILL.md) in
+  the open [Agent Skills](https://skills.sh) format, teaching agents how
+  to create, test, and publish garden plugins. Install it into any
+  harness (Claude Code, Cursor, Codex, …) with:
 
-## Preview
-Here are some previews of the revamped website.
+  ```sh
+  npx skills add oleeskild/digitalgarden
+  ```
 
-![home-light](assets/home-light.png)
-![home-dark](assets/home-dark.png)
-![about-light](assets/about-light.png)
-![about-dark](assets/about-dark.png)
-![archive-light](assets/archive-light.png)
-![archive-dark](assets/archive-dark.png)
-![post-light](assets/post-light.png)
-![post-dark](assets/post-dark.png)
+To try a third-party plugin manually, drop its directory into
+`src/plugins/` — a valid `garden-plugin.json` is all it takes. Disable any
+plugin via `src/plugins/plugins.json` (`{"plugins": {"dg-search": {"enabled": false}}}`).
+Only install plugins from authors you trust: plugin code runs in your site
+build and in your visitors' browsers.
 
-I think that's it. Please feel free to create any issues or contribute to the site. Special thanks to [Hux Blog](https://github.com/Huxpro/huxpro.github.io) for the incredible Jekyll theme, [Catppuccin](https://github.com/catppuccin/catppuccin) for the beautiful color palette, and a big shoutout to myself for having time to waste 😋.
+---
+## CSS Variables
+
+The digital garden is fully customizable through CSS variables. Override these in `src/site/styles/custom-style.scss` to customize your garden's appearance.
+
+### How to Customize
+
+Add your overrides to `custom-style.scss`:
+
+```scss
+body {
+    --dg-content-max-width: 800px;
+    --dg-content-font-size: 16px;
+    --dg-sidebar-max-width: 400px;
+}
+```
+
+### Responsive Layout Notes
+
+- Content will never overlap the filetree, regardless of `--dg-content-max-width` value
+- The right sidebar (TOC/graph/backlinks) automatically hides when there isn't enough viewport space
+- To make the sidebar appear at smaller viewports, reduce `--dg-sidebar-max-width`
+
+### Available Variables
+
+#### Color Variables
+You can override the base Obsidian theme color variables directly:
+
+| Variable | Description |
+|----------|-------------|
+| `--text-normal` | Normal text color |
+| `--text-muted` | Muted/secondary text |
+| `--text-faint` | Faint text |
+| `--text-accent` | Accent color |
+| `--text-accent-hover` | Accent hover color |
+| `--link-color` | Link color |
+| `--link-color-hover` | Link color hover |
+| `--link-unresolved-color` | Link color unresolved |
+| `--link-unresolved-opacity` | Link color unresolved opacity |
+| `--background-primary` | Primary background |
+| `--background-primary-alt` | Alt primary background |
+| `--background-secondary` | Secondary background |
+| `--background-secondary-alt` | Alt secondary background |
+| `--interactive-normal` | Interactive element color |
+| `--interactive-hover` | Interactive hover color |
+| `--interactive-accent` | Interactive accent |
+| `--interactive-accent-hover` | Interactive accent hover |
+
+#### Layout Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-content-max-width` | `700px` | Maximum width of content area |
+| `--dg-content-margin-top` | `90px` | Top margin for content |
+| `--dg-content-margin-top-mobile` | `75px` | Top margin on mobile |
+| `--dg-content-font-size` | `18px` | Base font size for content |
+| `--dg-content-line-height` | `1.5` | Line height for content |
+
+#### Sidebar (Right) Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-sidebar-top` | `75px` | Sidebar top offset |
+| `--dg-sidebar-gap` | `80px` | Gap between content and sidebar |
+| `--dg-sidebar-min-width` | `25px` | Minimum sidebar width |
+| `--dg-sidebar-max-width` | `350px` | Maximum sidebar width |
+| `--dg-sidebar-container-padding` | `20px` | Sidebar container padding |
+| `--dg-sidebar-container-height` | `87%` | Sidebar container height |
+
+#### Graph Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-graph-width` | `250px` | Local graph width |
+| `--dg-graph-height` | `250px` | Local graph height |
+| `--dg-graph-border-radius` | `10px` | Graph border radius |
+| `--dg-graph-margin-bottom` | `20px` | Graph bottom margin |
+| `--dg-graph-fullscreen-width` | `90vw` | Expanded/global graph width |
+| `--dg-graph-fullscreen-height` | `85vh` | Expanded/global graph height |
+| `--dg-graph-node-color` | `var(--text-accent)` | Active/current node color |
+| `--dg-graph-node-color-muted` | `var(--text-faint)` | Neighbor node color |
+| `--dg-graph-label-color` | `var(--text-normal)` | Node label text color |
+| `--dg-graph-bg` | `var(--background-primary)` | Graph background color |
+| `--dg-graph-border-color` | `var(--background-secondary)` | Graph border color |
+
+#### Filetree (Left Sidebar) Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-filetree-width` | `250px` | Filetree sidebar width |
+| `--dg-filetree-min-width` | `250px` | Minimum filetree width |
+| `--dg-filetree-padding` | `10px 20px` | Filetree padding |
+| `--dg-filetree-gap` | `80px` | Gap from content |
+| `--dg-filetree-title-size` | `32px` | Filetree title font size |
+
+#### TOC (Table of Contents) Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-toc-padding` | `5px` | TOC container padding |
+| `--dg-toc-font-size` | `0.9rem` | TOC font size |
+| `--dg-toc-max-height` | `220px` | TOC max height |
+| `--dg-toc-title-size` | `1.2rem` | TOC title font size |
+| `--dg-toc-item-padding` | `2px 0 2px 8px` | TOC item padding |
+| `--dg-toc-indent` | `1em` | TOC nested list indent |
+
+#### Backlinks Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-backlinks-margin-top` | `10px` | Backlinks section top margin |
+| `--dg-backlinks-max-height` | `250px` | Backlinks list max height |
+| `--dg-backlinks-title-size` | `0.9rem` | Backlinks title font size |
+| `--dg-backlinks-card-size` | `0.85rem` | Backlink card font size |
+| `--dg-backlinks-card-padding` | `6px 0` | Backlink card padding |
+| `--dg-backlinks-icon-size` | `14px` | Backlink icon size |
+
+#### Search Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-search-box-width` | `900px` | Search box width |
+| `--dg-search-box-max-width` | `80%` | Search box max width |
+| `--dg-search-box-radius` | `15px` | Search box border radius |
+| `--dg-search-box-padding` | `10px` | Search box padding |
+| `--dg-search-input-size` | `2rem` | Search input font size |
+| `--dg-search-input-padding` | `10px` | Search input padding |
+| `--dg-search-input-radius` | `5px` | Search input border radius |
+| `--dg-search-results-max-height` | `50vh` | Search results max height |
+| `--dg-search-result-size` | `1.2rem` | Search result font size |
+| `--dg-search-result-radius` | `10px` | Search result border radius |
+| `--dg-search-link-size` | `1.4rem` | Search link font size |
+
+#### Search Button Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-search-btn-radius` | `8px` | Search button border radius |
+| `--dg-search-btn-height` | `32px` | Search button height |
+| `--dg-search-btn-padding` | `0 10px` | Search button padding |
+| `--dg-search-btn-gap` | `8px` | Search button icon/text gap |
+| `--dg-search-btn-font-size` | `0.85rem` | Search button font size |
+| `--dg-search-btn-icon-size` | `14px` | Search button icon size |
+
+#### Navbar Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-navbar-title-size-mobile` | `18px` | Navbar title size on mobile |
+| `--dg-navbar-search-margin` | `20px` | Navbar search button margin |
+| `--dg-navbar-search-min-width` | `36px` | Navbar search min width |
+| `--dg-logo-height` | `40px` | Site logo height on desktop |
+| `--dg-logo-height-mobile` | `32px` | Site logo height on mobile |
+| `--dg-logo-margin` | `10px 15px` | Site logo margin |
+| `--dg-filetree-logo-height` | `70px` | Site logo height in filetree sidebar |
+
+#### Note Link / Filetree Item Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-notelink-padding` | `4px 8px 4px 12px` | Note link padding |
+| `--dg-notelink-size` | `0.85rem` | Note link font size |
+| `--dg-notelink-border-width` | `2px` | Note link left border width |
+| `--dg-notelink-hover-bg` | `rgba(255, 255, 255, 0.05)` | Note link hover background |
+| `--dg-folder-margin` | `4px 0 4px 2px` | Folder name margin |
+| `--dg-folder-icon-size` | `14px` | Folder icon size |
+| `--dg-inner-folder-padding` | `3px 0 3px 0` | Inner folder padding |
+| `--dg-inner-folder-margin` | `12px` | Inner folder left margin |
+| `--dg-filelist-margin` | `8px` | File list left margin |
+
+#### Graph Controls Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-graph-ctrl-padding` | `6px 10px` | Graph controls padding |
+| `--dg-graph-ctrl-radius` | `6px` | Graph controls border radius |
+| `--dg-graph-ctrl-margin` | `10px` | Graph controls margin |
+| `--dg-graph-ctrl-size` | `0.7rem` | Graph controls font size |
+| `--dg-graph-ctrl-icon-size` | `14px` | Graph control icon size |
+| `--dg-graph-ctrl-gap` | `10px` | Graph controls gap |
+
+#### Timestamps Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-timestamps-size` | `0.8em` | Timestamps font size |
+| `--dg-timestamps-gap` | `10px` | Timestamps gap |
+| `--dg-timestamps-margin-top` | `20px` | Timestamps top margin |
+
+#### Misc Component Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--dg-overlay-bg` | `rgba(0, 0, 0, 0.5)` | Overlay background color |
+| `--dg-mermaid-radius` | `25px` | Mermaid diagram border radius |
+| `--dg-mermaid-padding` | `10px` | Mermaid diagram padding |
+| `--dg-transclusion-padding` | `8px` | Transclusion container padding |
+| `--dg-external-link-icon-size` | `13px` | External link icon size |
+| `--dg-external-link-padding` | `16px` | External link right padding |
