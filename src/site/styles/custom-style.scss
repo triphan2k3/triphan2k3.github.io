@@ -19,8 +19,15 @@ table img {
 
 // Same fonts as the Obsidian vault. MonoLisa is not hosted here (licence),
 // so visitors without it installed fall back to their system monospace font.
-:root {
-  --font-default: "MonoLisa", "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-heading: var(--font-default);
-  --font-monospace: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+$text-font: "MonoLisa", "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+$code-font: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+// Set on body: obsidian-base resets these there. The overrides cover community
+// themes, --font-default/--font-heading cover the template's default theme.
+body {
+  --font-text-override: #{$text-font};
+  --font-interface-override: #{$text-font};
+  --font-monospace-override: #{$code-font};
+  --font-default: #{$text-font};
+  --font-heading: #{$text-font};
 }
