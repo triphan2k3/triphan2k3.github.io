@@ -4,7 +4,7 @@
 //
 // Only notes with `dg-publish: true` are published; `dg-home: true` marks the home page.
 //
-// Usage: node scripts/publish-local.js <vault> <folder-in-vault>
+// Usage: node scripts/publish-local.js <vault> <folder-in-vault>...
 
 const fs = require("fs");
 const path = require("path");
@@ -16,12 +16,12 @@ const IMG_DIR = path.join(__dirname, "..", "src/site/img/user");
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 
 function parseArgs() {
-  const [vault, folder] = process.argv.slice(2);
-  if (!vault || !folder) {
-    console.error("usage: publish-local.js <vault> <folder>");
+  const [vault, ...folders] = process.argv.slice(2);
+  if (!vault || folders.length === 0) {
+    console.error("usage: publish-local.js <vault> <folder>...");
     process.exit(1);
   }
-  return { vault: path.resolve(vault), folder: folder.replace(/\/$/, "") };
+  return { vault: path.resolve(vault), folders: folders.map((f) => f.replace(/\/$/, "")) };
 }
 
 function walk(dir, root, out = []) {
@@ -236,12 +236,12 @@ function compileNote(file, vault, vaultFiles, resolve, assets) {
 }
 
 function main() {
-  const { vault, folder } = parseArgs();
+  const { vault, folders } = parseArgs();
   const vaultFiles = walk(vault, vault);
   const resolve = buildResolver(vaultFiles);
   const notes = vaultFiles.filter(
     (f) =>
-      f.startsWith(`${folder}/`) &&
+      folders.some((folder) => f.startsWith(`${folder}/`)) &&
       f.endsWith(".md") &&
       matter(fs.readFileSync(path.join(vault, f), "utf8")).data["dg-publish"] === true,
   );
@@ -258,7 +258,7 @@ function main() {
     fs.mkdirSync(path.dirname(dest), { recursive: true });
     fs.copyFileSync(path.join(vault, asset), dest);
   }
-  console.log(`published ${notes.length} notes and ${assets.size} images from "${folder}"`);
+  console.log(`published ${notes.length} notes and ${assets.size} images from ${folders.join(", ")}`);
 }
 
 main();
