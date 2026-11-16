@@ -16,11 +16,3 @@ table img {
   max-width: 80px;
   height: auto;
 }
-
-// Same fonts as the Obsidian vault. MonoLisa is not hosted here (licence),
-// so visitors without it installed fall back to their system monospace font.
-:root {
-  --font-default: "MonoLisa", "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-heading: var(--font-default);
-  --font-monospace: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-}
