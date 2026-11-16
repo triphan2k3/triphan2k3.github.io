@@ -69,7 +69,7 @@ Because edges are oriented, the last layer is a subset of the CFOP last layer:
 | ZBLL | 1 | 472 | One look for the whole last layer: [[21. Application/Cube/Cube#PLL\|PLL]] is part of it, 493 cases in all |
 | Winter Variation + PLL | 1 + 1 | 27 + 21 | Orient corners while inserting the last pair (when it inserts as `R U R'`) |
 
-The 7 OCLL cases are already in this vault: [[21. Application/Cube/2-Look OLL/2-Look OLL Sune\|2-Look OLL Sune]], [[21. Application/Cube/2-Look OLL/2-Look OLL Antisune\|2-Look OLL Antisune]], [[21. Application/Cube/2-Look OLL/2-Look OLL H\|2-Look OLL H]], [[21. Application/Cube/2-Look OLL/2-Look OLL Pi\|2-Look OLL Pi]], [[21. Application/Cube/2-Look OLL/2-Look OLL U\|2-Look OLL U]], [[21. Application/Cube/2-Look OLL/2-Look OLL T\|2-Look OLL T]], [[21. Application/Cube/2-Look OLL/2-Look OLL L\|2-Look OLL L]]. EPLL is the edge step of 2-Look PLL: [[21. Application/Cube/2-Look PLL/2-Look PLL Ua\|2-Look PLL Ua]], [[21. Application/Cube/2-Look PLL/2-Look PLL Ub\|2-Look PLL Ub]], [[21. Application/Cube/2-Look PLL/2-Look PLL H\|2-Look PLL H]], [[21. Application/Cube/2-Look PLL/2-Look PLL Z\|2-Look PLL Z]].
+The 7 OCLL cases are already in this vault, in the [[21. Application/Cube/Cube#2-Look OLL\|2-Look OLL]] table: Sune, Antisune, H, Pi, U, T and L. EPLL is the edge step of [[21. Application/Cube/Cube#2-Look PLL\|2-Look PLL]]: Ua, Ub, H and Z.
 
 ## Suggested learning path
 
