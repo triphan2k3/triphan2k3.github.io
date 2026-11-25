@@ -12,15 +12,19 @@ How notes from this vault become the site at https://triphan2k3.github.io.
 ```mermaid
 flowchart LR
     subgraph Obsidian["Obsidian vault (source of truth)"]
-        Notes["Notes, CSV tables<br>+ attachments"]
+        Notes["Notes<br>+ attachments"]
+        CSV["CSV tables<br>(one row per card)"]
+        CSV -. "dataview<br>FROM csv()" .-> Notes
     end
-    Notes <-- "Anki CSV Sync plugin<br>(AnkiConnect)" --> Anki["Anki<br>decks for review"]
+    CSV <-- "Anki CSV Sync plugin<br>(AnkiConnect)" --> Anki["Anki<br>decks for review"]
+    Notes -- "note text" --> LLM["LLM API<br>(DeepSeek)"]
+    LLM -- "draft cards<br>(JSON)" --> CSV
     Notes -- "Digital Garden plugin<br>(GitHub API)" --> Repo["GitHub repo<br>triphan2k3.github.io"]
     Repo -- "GitHub Actions<br>deploy.yml" --> Pages["GitHub Pages<br>triphan2k3.github.io"]
-    Notes -. "obsidian-git" .-> Backup["GitHub repo<br>triphan2k3/obsidian"]
+    Obsidian -. "obsidian-git" .-> Backup["GitHub repo<br>triphan2k3/obsidian"]
 ```
 
-Everything is written once, in Obsidian. Anki can also send cards back (pull), but the site only receives copies.
+Everything is written once, in Obsidian. Anki can send cards back (pull), and the LLM (planned) would only draft cards into a CSV for review; the site only receives copies.
 
 ### Obsidian
 
@@ -40,6 +44,12 @@ Everything is written once, in Obsidian. Anki can also send cards back (pull), b
 - Current decks: `Cube::*` from `21. Application/Cube/db.csv` (57 rows with a deck; OLL/PLL rows have none yet) and `L_vim` from `21. Application/Vim/vim.csv`.
 - Don't rename or clear `anki_nid`, or the next push creates a duplicate card.
 - Review happens in Anki. Learning progress (`status`) is updated manually.
+
+### LLM (planned)
+
+- Not built yet. Idea: send a note (or a selection) to an LLM such as DeepSeek and get Anki cards back as JSON.
+- The cards land in a CSV table as drafts (empty `anki_nid`), get reviewed and edited there, and only reach Anki through **Push CSV to Anki**.
+- Note text sent to the LLM leaves the machine, so it shouldn't be used on private notes.
 
 ### GitHub Pages
 
